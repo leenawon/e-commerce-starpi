@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/thinkets",
+      "handler": "thinket.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/thinkets/count",
+      "handler": "thinket.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/thinkets/:id",
+      "handler": "thinket.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/thinkets",
+      "handler": "thinket.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/thinkets/:id",
+      "handler": "thinket.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/thinkets/:id",
+      "handler": "thinket.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

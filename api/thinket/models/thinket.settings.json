@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thinkets",
+  "info": {
+    "name": "Thinket",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Product_Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Price": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    },
+    "Product_Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
